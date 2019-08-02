@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<h2>Weight Calculator Software</h2>
+
+<form method="post" action="">
+
+    <div class="container">
+        <form action="" method="post">
+            {{ form.csrf }}
+
+            <div>
+                {{ form.plain.label }} {{ form.plain }}
+                {{ form.flute.label }} {{ form.flute }}
+            </div>
+            <br>
+            <div>
+                {{ form.length.label }} {{ form.length }}
+                {{ form.width.label }} {{ form.width }}
+            </div>
+            <br>
+            <div>
+                {{ form.sheet_count.label }} {{ form.sheet_count }}
+            </div>
+
+            <br>
+                <button type="submit">Submit</button>
+
+            {% if flute_weight %}
+            <h4>flute weight: {{flute_weight}} grams</h4>
+            {% endif %}
+
+            {% if plain_weight %}
+            <h4>plain weight: {{plain_weight}} grams</h4>
+            {% endif %}
+            
+            {% if sheet_area %}
+            <h4>sheet area: {{sheet_area}}</h4>
+            {% endif %}
+
+            {% if total_GSM %}
+            <h4>total GSM: {{total_GSM}}</h4>
+            {% endif %}
+            
+            {% if sheet_weight %}
+            <h4>sheet weight: {{sheet_weight}} grams</h4>
+            {% endif %}
+            
+            {% if sheet_count %}
+            <h4>sheet count: {{sheet_count}}</h4>
+            {% endif %}
+
+            {% if production_weight %}
+            <h4>production weight: {{production_weight}}</h4>
+            {% endif %}
+
+    </div>
+
+</form>
+
+</body>
+</html>
