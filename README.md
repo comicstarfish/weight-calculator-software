@@ -1,7 +1,7 @@
 ## Weight Calculator Software
 ### 1. Clone this git repo.
 
-### 2. Go to CMD and type run the following:
+### 2. Go to CMD and run the following:
 ```
 C:\Users\ganesh>pip3 install flask
 ...
@@ -9,7 +9,7 @@ C:\Users\ganesh>pip3 install flask
 C:\Users\manoj>pip3 install wtforms
 ...
 ```
-### 3. Now cd into the cloned directory:
+### 3. Now goto (cd into) the cloned directory:
 ```
 C:\Users\ganesh>cd .\Downloads\weight-calculator-software\
 ```
@@ -28,5 +28,5 @@ NOTE: If this fails try `python app.py`
 * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
 ...
 ```
-### 6. Hold Ctrl and click the displayed link to access the python web app.
+### 6. Hold Ctrl and click the displayed link to access the python web app, or simply copy paste `http://127.0.0.1:5000` in web browser.
 
