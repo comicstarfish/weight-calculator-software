@@ -5,7 +5,7 @@ DEBUG = True
 app = Flask(__name__)
 app.config.from_object(__name__)
 
-class SurveyForm(Form):
+class Attributes(Form):
     plain = TextField('Enter plain GSM:', validators=[validators.DataRequired()])
     flute = TextField('Enter flute GSM:', validators=[validators.DataRequired()])
     length = TextField('Enter length in inches:', validators=[validators.DataRequired()])
@@ -14,7 +14,7 @@ class SurveyForm(Form):
 
 @app.route('/', methods=['GET', 'POST'])
 def hello():
-    form = SurveyForm(request.form)
+    form = Attributes(request.form)
     print(form.errors)
 
     if request.method == 'POST':
